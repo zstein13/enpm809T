@@ -6,7 +6,7 @@ import numpy as np
 import cv2
 import imutils
 
-print "All packages imported properly!"
+print("All packages imported properly!")
 
 # Load & show original image
 image = cv2.imread("testudo.jpg")
@@ -14,8 +14,8 @@ true = image.copy()
 
 cv2.imshow("Original Image", image)
 
-print "height: %d" % (image.shape[0])
-print "width: %d" % (image.shape[1])
+print("height: %d" % (image.shape[0]))
+print("width: %d" % (image.shape[1]))
 
 x_lim = image.shape[0]
 y_lim = image.shape[1]

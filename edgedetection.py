@@ -21,8 +21,8 @@ for i in range(2000):
     else:
         f = np.append(f, 100 + np.random.normal(0,1))
 
-print f.shape
-print index.shape
+print(f.shape)
+print(index.shape)
 
 plt.figure(2)
 plt.plot(index, f, 'r-')
@@ -50,7 +50,7 @@ var = np.square(std)
 
 x = np.arange(-20, 20, 0.1)
 kernel = (1/(std*np.sqrt(2*np.pi)))*np.exp(-np.square((x-mean)/std)/2)
-print kernel.shape
+print(kernel.shape)
 
 plt.figure(4)
 plt.plot(x, kernel, 'b-')
@@ -62,7 +62,7 @@ plt.show()
 
 # Convolve original image signal with Gaussian filter
 smoothed = np.convolve(kernel, f, 'same')
-print smoothed.shape
+print(smoothed.shape)
 
 plt.figure(5)
 plt.plot(smoothed, 'r-')
@@ -96,7 +96,7 @@ plt.show()
 
 # Convolve original image signal with Gaussian filter
 smoothed = np.convolve(first_diff, f, 'same')
-print smoothed.shape
+print(smoothed.shape)
 
 plt.figure(8)
 plt.plot(smoothed, 'r-')
@@ -119,7 +119,7 @@ plt.show()
 
 # Convolve original image signal with Gaussian filter
 smoothed = np.convolve(laplacian, f, 'same')
-print smoothed.shape
+print(smoothed.shape)
 
 plt.figure(10)
 plt.plot(smoothed, 'r-')

@@ -6,7 +6,7 @@ import numpy as np
 import cv2
 import imutils
 
-print "All packages imported properly!"
+print("All packages imported properly!")
 
 # Load & show original image
 image = cv2.imread("testudo.jpg")
